@@ -88,7 +88,8 @@ put the output database (files *phr, *pin, *psq, *pin, *pal) in a directory, and
 
 on the master of the cluster (the pipeline will produce subscripts with PBS parameters as header, and these will be called with qsub commands by the pipeline, with dependancies between the jobs) :
 
-./HoLDuP_pipeline.sh -f <sample design> -c <programs config>
+./HoLDuP_pipeline.sh -f < sample design > -c < programs config >
+
 
  	Required arguments :
 
