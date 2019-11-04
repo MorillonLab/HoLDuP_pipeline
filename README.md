@@ -33,7 +33,7 @@ HoLDuP is a pipeline for ab initio transcripts assembly, from mapped paired-end 
 	
 	- cluster with Torque
 	
-	- download CPC program (coding potential calculator) at http://cpc.cbi.pku.edu.cn, and put it in "HoLDuP_pipeline" directory
+	- uncompress cpc.tar.gz (coding potential calculator, http://cpc.cbi.pku.edu.cn) in the "HoLDuP_pipeline" directory
 
 	
 	
