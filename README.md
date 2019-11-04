@@ -25,13 +25,16 @@ HoLDuP is a pipeline for ab initio transcripts assembly, from mapped paired-end 
 	
 	- bowtie2 (version >= 2.2.5)
 
-	- bedtools 2.17
+	- bedtools (version  >= 2.17)
 	
 	- htseq-count (version 0.6.1p1)
 	
 	- blastall (version 2.2.25)
 	
 	- cluster with Torque
+	
+	- download CPC program (coding potential calculator) at http://cpc.cbi.pku.edu.cn, and put it in "HoLDuP_pipeline" directory
+
 	
 	
 
