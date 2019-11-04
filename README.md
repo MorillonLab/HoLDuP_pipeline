@@ -1,5 +1,3 @@
-# HoLDuP_pipeline
-
 There are 8 parts in this README (from 1) to 8)), please read carefully at least until 7) included, to avoid unwanted behaviors, or to gain time !
 
 
@@ -27,7 +25,7 @@ HoLDuP is a pipeline for ab initio transcripts assembly, from mapped paired-end 
 	
 	- bowtie2 (version >= 2.2.5)
 
-	- bedtools (version >= 2.17)
+	- bedtools 2.17
 	
 	- htseq-count (version 0.6.1p1)
 	
@@ -194,21 +192,22 @@ gtf files with suffix :
 	
 	This can be shematized like this :
 	
+	
 							 ----
 							| 3w | RPKM expression above the value of the quantile threshold (we use 0.2)
 							 ----
 							   |
 							   v
-			  ----------------------------------
-			  |                                |
-			  v                                v
-	        ----                              ---- 
-		   |2bw | EST(s)                     |2aw | junction(s)
-		    ----                              ----
-	         |                                 |
-	         ----------------------------------
-	                           |
-	                           v
+			                  ----------------------------------
+			                  |                                |
+			                  v                                v
+	                                ----                              ---- 
+		                       |2bw | EST(s)                     |2aw | junction(s)
+		                        ----                              ----
+	                                  |                                 |
+	                                   ----------------------------------
+	                                                  |
+	                                                  v
 							 ----
 							| 1w | RPKM expression above the value of the quantile threshold + EST(s) + junction(s)
 							 ---- 
