@@ -1,0 +1,7 @@
+B67T11.R1.fastq.gz	prostate_tumor	mate1	fr-firststrand
+                   
+B67T11.R2.fastq.gz	prostate_tumor	mate2	fr-firststrand
+                   
+B67T14.R1.fastq.gz	prostate_normal	mate1	fr-firststrand
+                   
+B67T14.R2.fastq.gz	prostate_normal	mate2	fr-firststrand

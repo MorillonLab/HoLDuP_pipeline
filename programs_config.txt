@@ -1,0 +1,84 @@
+
+#adapt this file to your directories (complete each line containing variable=value)
+#don't put space between the variable and its value (it's always variable=value)
+#you can put comments, by using "#" before the comment, as it is done here
+#don't remove/modify the variables here (unless you modify the pipeline itself according to the new variables), they will be used by the pipeline
+
+
+######### bins ############
+###########################
+
+
+#location of bedtools bin
+BEDTOOLS_PATH=/bioinfo/local/BEDTools/bin
+
+#location of blastall bin
+BLASTALL_PATH=/bioinfo/local/build/blast-2.2.25/bin/
+
+##########################
+
+
+######### programs ############
+#if these variable are empty (like for example samtools=""), the pipeline will search in the $PATH environment variable if the tool is present
+###############################
+
+
+#htseq-count (the tool) location
+HTSEQCOUNT=/bioinfo/local/build/HTSeq-0.6.1p1/bin/htseq-count
+
+
+#samtools location (the tool)
+samtools=/bioinfo/local/build/samtools_0.1.8/samtools
+
+#location of Rscript ; normally it's in the $PATH environment variable, but on some clusters, it could be in another directory
+r_script=/bioinfo/local/build/R/R-3.3.0_centos/bin/Rscript
+
+
+#tophat2 location (the tool)
+TOPHAT_BIN=/data/tmp/mgabriel/tophat-2.1.1.Linux_x86_64/tophat2
+
+#bowtie2 bin 
+BOWTIE2_PATH=/bioinfo/local/build/bowtie2-2.2.5
+
+##########################
+
+
+######### supplied files & variables ############
+#################################################
+
+#output directory
+WORK_DIR=/data/tmp/mgabriel/holdUP_hg38
+
+#will be in job names and working directory
+PROJECT_NAME=holdUP_prostate_g38_gencode27
+
+#annotations to use (bed & gtf)
+ANNOTATION_BED_FILE=/data/tmp/mgabriel/gencode27/gencode.v27.annotation.bed
+
+ANNOTATION_GTF_FILE=/data/tmp/mgabriel/gencode27/gencode.v27.annotation.gtf
+
+#ESTs ; these files can be found here for hg38 http://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/ , or here for hg19 http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database/ (file "all_est.txt.gz") 
+EST_BED_FILE=/data/tmp/mgabriel/all_human_ESTs.bed
+
+#genome (uncompressed fasta format)
+FASTA_FILE=/data/tmp/mgabriel/gencode26/only_official_chr/GRCh38.p10.only_official_chr.fa
+
+#bowtie index to use during the mapping ; it has to match to the supplied genome
+BOWTIE_INDEX=/data/tmp/mgabriel/gencode26/only_official_chr/GRCh38.p10.only_official_chr
+
+#protein database directory
+#/data/tmp/mgabriel/prot_db_uniref90
+CPC_DATA=/data/tmp/mgabriel/cpc/data
+
+##########################
+
+############ rare case ########
+
+#when htseq-count is incorrectly installed, sometimes you need to set the PYTHONPATH variable, see here http://seqanswers.com/forums/showthread.php?t=11419
+#if when you call htseq-count, there's no issue at all, let this variable empty (=with empty double quotes)
+#/bioinfo/local/build/HTSeq-0.6.1p1/lib/python
+
+python_path="/bioinfo/local/build/HTSeq-0.6.1p1/lib/python"
+
+################################
+
