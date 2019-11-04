@@ -1,0 +1,9 @@
+3prime_overlapping_ncrna
+antisense
+lincRNA
+miRNA
+misc_RNA
+non_coding
+snoRNA
+snRNA
+rRNA
